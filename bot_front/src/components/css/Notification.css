@@ -1,0 +1,18 @@
+.notification {
+    position: fixed;
+    top: -60px; /* Начальная позиция выше экрана */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336; /* Красный цвет для уведомления */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: top 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    z-index: 9999;
+  }
+  
+  .notification.show {
+    top: 20px; /* Конечная позиция уведомления */
+    opacity: 1;
+  }
