@@ -11,12 +11,13 @@ router.register(r'order', OrderViewSet)
 
 urlpatterns = [
     path('data', recieve_data),
-    path('validate/check/logIn', check_logIn),#authorization
-    path('validate/check/setLogIn', setLogIn),#setLogInForCheck
-    path("validate/check/isLoggedIn", isLoggedIn),#isLoggedIn?
-    path('validate/check/checkUser', checkUser),#teleg check
-    path('makeOrder', makeOrder),#make Order
-    path('getOrders', getOrdersToDo),#get orders to do
+    path('validate/check/logIn', check_logIn),  # authorization
+    path('validate/check/setLogIn', setLogIn),  # setLogInForCheck
+    path('validate/check/isLoggedIn', isLoggedIn),  # isLoggedIn?
+    path('validate/check/checkUser', checkUser),  # teleg check
+    path('makeOrder', makeOrder),  # make Order
+    path('getOrders', getOrdersToDo),  # get orders to do
     path('orderComplete', orderComplete),
+    path('getLastOrder', get_last_order),  # Добавьте эту строку
     path('', include(router.urls))
 ]

@@ -22,6 +22,6 @@ if __name__ == "__main__":
     bot_thread = threading.Thread(target=run_bot)
 
     django_thread.start()
-    print("сервер джанго запущен")
+    print("сервер джанго запущен 192.168.56.1:8000")
     bot_thread.start()
     print("бот запущен")
